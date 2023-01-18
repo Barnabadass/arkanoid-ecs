@@ -1,0 +1,28 @@
+{
+  "name": "arkanoid-ecs",
+  "version": "1.0.0",
+  "description": "arkanoid game built on an ecs system",
+  "main": "index.js",
+  "scripts": {
+    "compile": "webpack",
+    "dev": "node ./node_modules/nodemon/bin/nodemon.js -e ts --exec \"npm run compile\"",
+    "server": "py -m http.server -d dist"
+  },
+  "keywords": [
+    "pixi",
+    "arcade",
+    "ecs"
+  ],
+  "author": "Mikhail Gilev",
+  "license": "ISC",
+  "dependencies": {
+    "@types/pixi.js": "^5.0.0",
+    "nodemon": "^2.0.20",
+    "pixi.js": "^7.1.0",
+    "ts-loader": "^9.4.2",
+    "typescript": "^4.9.4",
+    "@releaseband/ecs": "2.1.3",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
+}
